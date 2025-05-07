@@ -62,12 +62,11 @@ export default function WishlistPage() {
               {wishlist.map((product) => (
                 <Card key={product.id} className="relative overflow-hidden">
                   <Button 
-                    variant="ghost" 
                     size="icon" 
-                    className="absolute top-2 right-2 z-10 bg-white/80 hover:bg-gray"
+                    className="absolute top-2 right-2 z-10 bg-gray-200 rounded-full hover:bg-orange-300"
                     onClick={() => removeFromWishlist(product.id)}
                   >
-                    <X className="h-6 w-6 bg-slate-200 rounded-full p-1" />
+                    <X className="h-6 w-6" />
                   </Button>
                   <CardHeader className="p-0">
                     <div className="aspect-square overflow-hidden">
